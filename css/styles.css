@@ -1,0 +1,508 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Red Hat Mono', cursive;
+    color: #40514E;
+    overflow-x: hidden;
+}
+
+/* Main Containers */
+
+#top-container {
+    background-color: #6EDCD9;
+    position: relative;
+    height: 42.17rem;
+    width: 100%;
+}
+
+
+#middle-container {
+    background-color: #F5F5F5;
+}
+
+
+#bottom-container {
+    background-color: #6EDCD9;
+    text-align: center;
+    margin-top: 0;
+    height: 10rem;
+}
+
+/* Headings */
+
+h1 {
+    margin: 0 auto 0 auto;
+    padding-top: 100px;
+    font-size: 3.125rem;
+    color: #C69B7B;
+    font-weight: 0;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.1rem;
+    color: #C69B7B;
+    font-weight: normal;
+}
+
+h3 {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    color: #C69B7B;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #C69B7B;
+}
+
+
+/* Navbar */
+
+.topnav {
+    background-color: #6EDCD9;
+    overflow: hidden;
+    margin: auto;
+    width: 24rem;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #C69B7B;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Montserrat-Light";
+}
+
+/* Top Container Components */
+
+.main-head {
+    padding-top: 3rem;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 18rem;
+    bottom: 300px;
+}
+
+.top-cloud {
+    position: absolute;
+    right: 18rem;
+    top: 50px;
+}
+
+.mountain-img {
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+    top: 1.05rem;
+}
+
+
+/* Middle Container Components */
+
+.my-skills {
+    font-size: 2.5rem;
+}
+
+
+.intro-Para {
+    color: #40514E;
+    padding-top: 0;
+    padding-bottom: 4rem;
+}
+
+.hello {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+
+.me {
+    border-radius: 50px;
+    height: 200px;
+    width: 210px;
+    margin-top: 3rem;
+}
+
+.frontEnd {
+    width: 25%;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1.2rem;
+    position: relative;
+    bottom: 4rem;
+    top: 1rem;
+}
+
+.backEnd {
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+    position: relative;
+
+}
+
+p {
+    line-height: 1.4;
+}
+
+
+
+.skill-row-one {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    word-spacing: 2;
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+.skill-row-two {
+    width: 50%;
+    margin: 0 auto 0 auto;
+    word-spacing: 2;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.skills {
+    height: 40rem;
+}
+
+/* Contact-Me Components */
+
+.get-in-touch {
+    font-size: 2.5rem;
+    margin: 0 auto 0 auto;
+    padding: 0;
+}
+
+#contact-me {
+    background-color: #F5F5F5;
+    margin-top: 0;
+    height: 20rem;
+    padding-top: 1.8rem;
+    padding-bottom: 10.8rem;
+}
+
+
+hr {
+    border-style: dotted none none;
+    border-width: 8px;
+    width: 5%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 60px auto 0 auto;
+}
+
+.btn-form {
+    background: #6EDCD9;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #6EDCD9 2px;
+    text-decoration: none;
+    position: relative;
+    top: 3rem;
+}
+
+.btn-form:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+/* Bottom-Container Components */
+
+.footer-link {
+    color: #11999e;
+    position: relative;
+    text-decoration: none;
+    top: 3.5rem;
+    bottom: 2rem;
+    right: 2.9rem;
+    padding-left: 5rem;
+}
+
+.copyright {
+    margin-top: 7rem;
+    color: #eaf6f6;
+    font-size: 0.75rem;
+}
+
+
+a:hover {
+    color: #eaf6f6;
+}
+
+
+/* Add class when navbar is open on smaller screens */
+.small-screen {
+    display: none;
+}
+
+/* Button to go to the top */
+.back-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.back-to-top-button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+
+/* Responsiveness for Navbar */
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .main-head {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    #top-container {
+        height: 0rem;
+    }
+
+    .main-head {
+        padding: 0;
+    }
+}
+
+
+
+@media (min-width: 380px) and (max-width: 700px) {
+
+
+    #top-container {
+        height: 31.65rem;
+    }
+
+    .main-head {
+        padding: 0;
+    }
+
+    .mountain-img {
+        width: 400px;
+        overflow-y: hidden;
+    }
+
+    .bottom-cloud,
+    .top-cloud {
+        display: none;
+    }
+
+    .bottom-cloud {
+        bottom: 12rem;
+    }
+
+    .hr-2 {
+        margin-top: 300px;
+    }
+
+
+    #bottom-container {
+        height: 200px;
+    }
+
+
+    .foot-1,
+    .foot-2,
+    .foot-3 {
+
+        position: relative;
+        display: flex;
+        padding-left: 50%;
+        width: 100%;
+    }
+
+
+    .foot-1 {
+        top: 40px;
+    }
+
+    .foot-2 {
+        top: 60px;
+    }
+
+    .foot-3 {
+        top: 80px;
+    }
+
+
+    #contact-me {
+        background-color: #F5F5F5;
+        margin-top: 0;
+        height: 20rem;
+        padding-top: 1.8rem;
+        padding-bottom: 27.8rem;
+    }
+
+}
+
+/* Smaller Screens */
+
+@media (max-width: 380px) {
+
+    /* Top Container */
+
+    #top-container {
+        height: 27.25rem;
+    }
+
+    .mountain-img {
+
+        width: 279px;
+        margin-bottom: 0 !important;
+        overflow-y: hidden;
+    }
+
+    .bottom-cloud,
+    .top-cloud {
+
+        display: none;
+        /* width: 75px; */
+    }
+
+    .bottom-cloud {
+        margin-left: -1rem;
+        bottom: 10rem;
+    }
+
+    .top-cloud {
+        margin-right: -1rem;
+        top: 6rem;
+    }
+
+    .hr-2 {
+        margin-top: 300px;
+    }
+
+    /* Bottom Container */
+
+    #bottom-container {
+        height: 200px;
+    }
+
+
+    .foot-1,
+    .foot-2,
+    .foot-3 {
+
+        position: relative;
+        display: flex;
+        padding-left: 11rem;
+        width: 100%;
+    }
+
+
+    .foot-1 {
+        top: 40px;
+    }
+
+    .foot-2 {
+        top: 60px;
+    }
+
+    .foot-3 {
+        top: 80px;
+    }
+
+
+    #contact-me {
+        background-color: #F5F5F5;
+        margin-top: 0;
+        height: 20rem;
+        padding-top: 1.8rem;
+        padding-bottom: 29.8rem;
+    }
+}

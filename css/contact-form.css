@@ -1,0 +1,267 @@
+.modal {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* height: 56%; */
+    transform: translate(-50%, -50%) scale(0);
+    transition: 400ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #ECF9FF;
+    width: 500px;
+    max-width: 600px;
+    visibility: hidden;
+}
+
+
+.modal.active {
+
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.modal-header .title {
+
+    margin-left: 37%;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+
+.modal-header .modal-close {
+
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    color: #C69B7B;
+    background-color: #ECF9FF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: -1px;
+    resize: both;
+}
+
+
+.modal-body form input {
+
+    display: block;
+    margin: 12px auto;
+    padding: 10px;
+    width: 45%;
+}
+
+
+.modal-body form label {
+
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #C69B7B;
+    margin: 8px auto;
+    width: 45%;
+}
+
+
+.modal-body form textarea {
+
+    margin: 12px auto;
+    padding: 10px;
+    height: 45px;
+    width: 45%;
+}
+
+.modal-body form .btn-send {
+
+    background: #6EDCD9;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Red Hat Mono', cursive;
+    color: #ffffff;
+    font-size: 1.25rem;
+    padding: 10px 20px 10px 20px;
+    border: solid #6EDCD9 2px;
+    position: relative;
+    width: 50%;
+    bottom: 8px;
+}
+
+#overlay {
+
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 400ms ease-in-out;
+    /* background-color: rgba(0, 0, 0, .5); */
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+
+/* RESPONSIVE MODAL */
+
+@media (min-width: 400px) and (max-width: 700px) {
+
+
+    .modal {
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 53%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 400ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #ECF9FF;
+        width: 380px;
+        max-width: 600px;
+        visibility: hidden;
+    }
+
+
+    .modal-body form input {
+
+        width: 40%;
+        height: 30%;
+        padding: 5px;
+    }
+
+    .modal-body form textarea {
+
+        width: 40%;
+        height: 30%;
+        padding: 5px;
+    }
+
+
+    .modal-body form label {
+
+        margin-top: -0.5rem;
+    }
+
+    .modal .title {
+
+        visibility: hidden;
+    }
+
+
+    .modal-body form .btn-send {
+
+        background: #6EDCD9;
+        background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+        background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: 'Red Hat Mono', cursive;
+        color: #ffffff;
+        font-size: 1.25rem;
+        padding: 5px 10px 5px 10px;
+        border: solid #6EDCD9 2px;
+        position: relative;
+        width: 45%;
+        bottom: 8px;
+    }
+
+
+}
+
+
+@media (max-width: 400px) {
+
+    .modal {
+
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        height: 60%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 400ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-color: #ECF9FF;
+        width: 340px;
+        max-width: 600px;
+        visibility: hidden;
+    }
+
+    .modal .title {
+
+        visibility: hidden;
+    }
+
+
+    .modal-body form input {
+
+        width: 40%;
+        height: 30%;
+        padding: 5px;
+    }
+
+    .modal-body form textarea {
+
+        width: 40%;
+        height: 30%;
+        padding: 5px;
+    }
+
+
+    .modal-body form label {
+
+        margin-top: -0.5rem;
+    }
+
+    .modal-body form .btn-send {
+
+        background: #6EDCD9;
+        background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+        background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+        background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+        -webkit-border-radius: 8;
+        -moz-border-radius: 8;
+        border-radius: 8px;
+        font-family: 'Red Hat Mono', cursive;
+        color: #ffffff;
+        font-size: 1.25rem;
+        padding: 5px 10px 5px 10px;
+        border: solid #6EDCD9 2px;
+        position: relative;
+        width: 45%;
+        bottom: 8px;
+    }
+
+}
