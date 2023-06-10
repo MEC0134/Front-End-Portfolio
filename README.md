@@ -1,6 +1,6 @@
 ## Front-end Web Portfolio
 
-#### This is a front-end web portfolio designed to showcase my front-end skills. It includes HTML, CSS, and JavaScript files. The portfolio demonstrates your ability to design and create visually appealing websites.
+#### This is a front-end web portfolio designed to showcase my front-end skills. It includes HTML, CSS, and JavaScript files. The portfolio demonstrates my ability to design and create visually appealing websites.
 
 ### Getting Started
 
